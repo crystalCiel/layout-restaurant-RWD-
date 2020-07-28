@@ -202,6 +202,7 @@ h1, h2, h3, span {
 
 .header > .info > .menu > li > a {
   color: #fff;
+  text-decoration: none;
 }
 
 .header > .info > .menu.openMeun {

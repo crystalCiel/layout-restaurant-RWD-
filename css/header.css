@@ -176,6 +176,7 @@
 
 .header > .info > .menu > li > a {
   color: #fff;
+  text-decoration: none;
 }
 
 .header > .info > .menu.openMeun {
