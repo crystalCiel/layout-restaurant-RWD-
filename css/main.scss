@@ -1,0 +1,295 @@
+@import './reset.scss';
+@import './header.scss';
+@import './footer.scss';
+
+.container {
+    height: 110vh;
+
+    > .main {
+        width: 100%;
+
+        > .contentBlock {
+            background-color: #EFE9E7;
+
+            > .contentInfo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+                width: 100%;
+                max-width: 1024px;
+                height: 100%;
+                color: #3D1101;
+                margin: 0 auto;
+
+                > .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    line-height: 32px;
+                    font-size: 20px;
+                    margin: 50px 0px 31px 0px;
+
+                    > hr {
+                        width: 120px;
+                        border-top-width: 1px;
+                        border-top: 1px solid #3D1101;
+
+                        @media screen and (max-width: 767.98px) {
+                            display: none;
+                        }
+                    }
+                }
+
+                > .infoData {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+
+                    @media screen and (max-width: 767.98px) {
+                        width: 82%;
+                        flex-flow: column;
+                    }
+
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-flow: wrap;
+                        text-align: center;
+                        width: 33%;
+                        margin-bottom: 30px;
+
+                        @media screen and (max-width: 767.98px) {
+                            width: 100%;
+                        }
+                        
+                        > img {
+                            border-radius: 50%;
+                        }
+
+                        > h3 {
+                            font-size: 18px;
+                            margin-top: 20px;
+
+                            > span {
+                                display: block;
+                                font-size: 17px;
+                                font-weight: normal;
+                                line-height: 22px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        > .chefBlock {
+            background-color: #3D1101;
+
+            > .chefInfo {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                max-width: 1024px;
+                height: 100%;
+                margin: 0 auto;
+
+                @media screen and (max-width: 600px) {
+                    flex-flow: column;
+                }
+
+                > img {
+                    max-width: 100%;
+                    height: 460px;
+                    overflow: hidden;
+                }
+
+                > .chefContent {
+                    width: 46%;
+                    color: #EFE9E7;
+                    padding: 2%;
+
+                    @media screen and (max-width: 600px) {
+                        width: 90%;
+                    }
+
+                    > h3 {
+                        line-height: 32px;
+                        margin-bottom: 16px;
+
+                        > span {
+                            display: block
+                        }
+                    }
+
+                    > p {
+                        line-height: 22px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        > .opinionBlock {
+            background-color: #EFE9E7;
+
+            > .opinionInfo {
+                width: 100%;
+                max-width: 1024px;
+                height: 100%;
+                margin: 0 auto;
+                padding-bottom: 57px;
+
+                > h3 {
+                    font-size: 24px;
+                    padding-top: 50px;
+                    padding-bottom: 32px;
+                    text-align: center;
+                }
+
+                > .infoData {
+                    display: flex;
+                    width: 98%;
+                    margin: 0 auto;
+
+                    @media screen and (max-width: 767.98px) {
+                        flex-flow: column;
+                    }
+
+                    > .opinion {
+                        display: flex;
+                        
+                        > img {
+                            width: 67px;
+                            height: 67px;
+                            border-radius: 50%;
+                        }
+
+                        > .content {
+                            padding-left: 1%;
+
+                            > span {
+                                display: block;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        > .bookBlock {
+            background-color: rgba(250, 250, 250, 0.7);
+            width: 100%;
+
+            > .bookInfo {
+                width: 94%;
+                max-width: 1024px;
+                margin: 0 auto;
+                padding-bottom: 50px;
+
+                > h2 {
+                    text-align: center;
+                    color: #3d1101;
+                    font-size: 24px;
+                    line-height: 33px;
+                    padding-top: 50px;
+                    padding-bottom: 38px;
+                }
+
+                > .wrap {
+                    display: flex;
+                    width: 94%;
+                    flex-flow: row;
+                    justify-content: space-between;
+
+                    @media screen and (max-width: 767.98px) {
+                        flex-flow: column;
+                        width: 100%;
+                    }
+
+                    > .map {
+                        max-width: 100%;
+                        overflow: hidden;
+                        
+                        > img {
+                            max-width: 100%;
+                        }
+                    }
+
+                    > form {
+                        width: calc(100% - 462px);
+                        padding-left: 20px;
+
+                        @media screen and (max-width: 767.98px) {
+                            margin-top: 30px;
+                            width: 100%;
+                            padding-left: 0px;
+                        }
+
+                        > * {
+                            display: block;
+                        }
+
+                        > label {
+                            width: 100%;
+                            font-size: 14px;
+                            color: #3D1101;
+                            margin-bottom: 6px;
+                        }
+
+                        > .vegetableLabel {
+                            display: inline;
+                        }
+
+                        > input {
+                            display: inline-block;
+                            width: 100%;
+                            height: 32px;
+                            font-size: 16px;
+                            vertical-align: middle;
+                            border-radius: 4px;
+                            margin-bottom: 12px;
+                            padding: 0.5em 0.6em;
+                            border: 1px solid #ccc;
+                            box-shadow: inset 0 1px 3px #ddd;
+                            box-sizing: border-box;
+                        }
+
+                        > .vegetableSelect {
+                            width: 13px;
+                            height: 13px;
+                        }
+
+                        > .formBtn {
+                            text-align: right;
+
+                            > .btn {
+                                font-size: 14px;
+                                border-radius: 3px;
+                                border: none transparent;
+                                color: white;
+                                padding: 0.5em 1em;
+                                text-decoration: none;
+
+                                &.cancel {
+                                    background-color: rgba(0, 0, 0, 0.35)
+                                }
+
+                                &.confirm {
+                                    background-color: #F56C23;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

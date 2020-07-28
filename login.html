@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>六角西餐廳</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <nav class="info">
+                    <h1 class="logoName">六角西餐廳</h1>
+                    <div class="hambugerMenu" id="hambugerMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">介紹</a></li>
+                        <li><a href="./login.html">登入</a></li>
+                        <li><a href="./order.html">線上訂購</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="banner">
+                <div class="bannerBackground">
+                    <div class="slogan">
+                        <h2>咬一口 <span class="wrap">就無法忘懷的漢堡</span></h2>
+                        <p>七夕絕對無法錯過的好滋味<br>六角大漢堡</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="loginBlock">
+                <div class="loginInfo">
+                    <img src="./images/logo_l.svg">
+                    <h3>享受美食的好味道</h3>
+                    
+                    <form>
+                        <h4>LOGIN</h4>
+                        <label>Email Address</label>
+                        <input type="email">
+                        <label>Password</label>
+                        <input type="password">
+                        <span>忘記密碼?</span>
+                        <div class="btnGroup">
+                            <button class="btn confire">送出</button>
+                            <button class="btn cancel">取消</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footerInfo">
+                    <div class="about">
+                        <h4 class="footerTitle">關於 六角西餐廳</h4>
+                        <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+                    </div>
+                    <div class="connection">
+                        <h4 class="footerTitle">聯絡方式</h4>
+                        <ul>
+                            <li>高雄市中正五路到底</li>
+                            <li>+886 886 886</li>
+                            <li>service@hexschool.com</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h2>六角西餐廳</h2>
+                        <a><i class="fa fa-google-plus-square googleplus" aria-hidden="true"></i></a>
+                        <a><i class="fa fa-twitter-square twitter" aria-hidden="true"></i></a>
+                        <a><i class="fa fa-facebook-official facebook" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            let hambugerMenu = document.getElementById('hambugerMenu');
+            let menu = document.getElementById('menu');
+
+            hambugerMenu.addEventListener('click', () => {
+                let targetArr = hambugerMenu.classList;
+                console.log(targetArr[1]);
+                if (targetArr[1] === 'close') {
+                    hambugerMenu.classList.remove('close');
+                    menu.classList.remove('open');
+                } else {
+                    hambugerMenu.classList.add('close');
+                    menu.classList.add('open');
+                }
+            });
+        </script>
+    </body>
+</html>

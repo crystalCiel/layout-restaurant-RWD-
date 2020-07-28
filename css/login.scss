@@ -1,0 +1,95 @@
+@import './reset.scss';
+@import './header.scss';
+@import './footer.scss';
+
+.container {
+
+    > .loginBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #EFE9E7;
+
+        > .loginInfo {
+            height: 100%;
+            text-align: center;
+
+            > img {
+                margin-top: 50px;
+                padding-bottom: 5px;
+            }
+
+            > h3 {
+                margin-bottom: 35px;
+            }
+
+            > form {
+                min-width: 300px;
+                min-height: 273px;
+                border-radius: 3px;
+                padding: 3px;
+                margin-bottom: 50px;
+                border-top: 3px solid #FF5E45;
+                box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.16);
+
+                > * {
+                    display: block;
+                }
+
+                > h4 {
+                    padding-top: 15px;
+                    margin-bottom: 16px;
+                    margin-top: 0;
+                    font: inherit;
+                }
+
+                > label {
+                    font-size: 16px;
+                    text-align: left;
+                    margin: 0.5em 0 0.2em;
+                }
+
+                > input {
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 3px #ddd;
+                    box-sizing: border-box;
+                    padding: 0.5em 0.6em;
+                    vertical-align: middle;
+                }
+
+                > span {
+                    color: #FF5E45;
+                    text-align: left;
+                    font-size: 14px;
+                    margin-bottom: 36px;
+                    margin-top: 1px;
+                }
+
+                > .btnGroup {
+                    display: flex;
+                    justify-content: space-around;
+
+                    > .btn {
+                        width: 48%;
+                        height: 32px;
+                        font-size: 14px;
+                        color: white;
+                        cursor: pointer;
+                        border: none transparent;
+                        
+                        &.confire {
+                            background-color: #F56C23;
+                        }
+
+                        &.cancel {
+                            background-color: rgba(0, 0, 0, 0.35);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

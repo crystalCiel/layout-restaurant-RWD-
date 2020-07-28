@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  background-color: #EFE9E7;
+}
+
+.footer > .footerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer > .footerInfo {
+    display: block;
+  }
+}
+
+.footer > .footerInfo > * {
+  color: #3D1101;
+}
+
+.footer > .footerInfo > * .footerTitle {
+  font: inherit;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.footer > .footerInfo > .about {
+  width: calc( 100% / 3);
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer > .footerInfo > .about {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
+.footer > .footerInfo > .about > * {
+  margin: 0;
+}
+
+.footer > .footerInfo > .about > p {
+  margin-top: 14px;
+}
+
+.footer > .footerInfo > .connection {
+  width: calc( 100% / 3);
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer > .footerInfo > .connection {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.footer > .footerInfo > .connection > * {
+  margin: 0;
+}
+
+.footer > .footerInfo > .connection > ul {
+  list-style: circle inside;
+  list-style-type: disc;
+  margin-top: 14px;
+}
+
+.footer > .footerInfo > .social {
+  font-size: 36px;
+  text-align: right;
+}
+
+.footer > .footerInfo > .social > h2 {
+  font-size: 49px;
+  margin: 22px 0;
+}
+
+.footer > .footerInfo > .social .googleplus {
+  color: #DB4437;
+}
+
+.footer > .footerInfo > .social .twitter {
+  color: #41ABE1;
+}
+
+.footer > .footerInfo > .social .facebook {
+  color: #3A5795;
+}
+/*# sourceMappingURL=footer.css.map */
