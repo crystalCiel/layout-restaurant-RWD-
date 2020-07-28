@@ -170,6 +170,10 @@
   color: black;
 }
 
+.header > .info > .menu > li:hover > * {
+  color: black;
+}
+
 .header > .info > .menu > li > a {
   color: #fff;
 }

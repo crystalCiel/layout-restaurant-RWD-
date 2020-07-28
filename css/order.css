@@ -196,6 +196,10 @@ h1, h2, h3, span {
   color: black;
 }
 
+.header > .info > .menu > li:hover > * {
+  color: black;
+}
+
 .header > .info > .menu > li > a {
   color: #fff;
 }
